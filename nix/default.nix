@@ -27,6 +27,7 @@ let
           ghcide-ghc865 = mkHieCore { ghc = pkgs.haskell-nix.compiler.ghc865; stackYaml = "stack.yaml"; };
           ghcide-ghc864 = mkHieCore { ghc = pkgs.haskell-nix.compiler.ghc864; stackYaml = "stack.yaml"; };
           ghcide-ghc844 = mkHieCore { ghc = pkgs.haskell-nix.compiler.ghc844; stackYaml = "stack84.yaml"; };
+          ghcide-ghc84_ = ghc84: mkHieCore { ghc = ghc84; stackYaml = "stack84.yaml"; };
           hie-bios = (mkPackages { ghc = pkgs.haskell-nix.compiler.ghc865; stackYaml = "stack.yaml"; }).hie-bios.components.exes.hie-bios;
          };
 
